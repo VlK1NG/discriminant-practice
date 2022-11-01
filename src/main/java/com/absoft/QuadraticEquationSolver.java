@@ -18,9 +18,9 @@ public class QuadraticEquationSolver {
             Solution.x1 = (-b + (int) Math.sqrt(discriminant)) / (2 * a);
             Solution.x2 = (-b - (int) Math.sqrt(discriminant)) / (2 * a);
             return new Solution(Solution.x1, Solution.x2);
-        } else if (QuadraticEquationSolver.discriminant == 0) {
-            Solution.x1 = -QuadraticEquationSolver.b / (2 * QuadraticEquationSolver.a);
-            Solution.x2 = -QuadraticEquationSolver.b / (2 * QuadraticEquationSolver.a);
+        } else if (discriminant == 0) {
+            Solution.x1 = -b / (2 * a);
+            Solution.x2 = -b / (2 * a);
             return new Solution(Solution.x1, Solution.x2);
         } else {
             return null;
